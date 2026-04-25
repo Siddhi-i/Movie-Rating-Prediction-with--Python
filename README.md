@@ -5,49 +5,51 @@
 # 🎬 Movie Rating Prediction
 
 ## 📌 About the Project
-I worked on this project to understand how machine learning can be used to predict movie ratings based on different features like genre, director, and actors.
+I worked on this project to explore how machine learning can be used to predict movie ratings based on features like genre, director, and actors.
 
 The goal was to build a model that can estimate the rating of a movie using historical data.
 
 ---
 
 ## 📊 Dataset
-The dataset contains information about movies such as:
+The dataset includes information about movies such as:
 - Genre  
 - Director  
 - Actors  
 - Rating (target variable)  
 
-Some rows in the dataset were inconsistent or missing values, so preprocessing was required.
+While working with the data, I noticed that it contained missing values and some inconsistencies, so preprocessing was required.
 
 ---
 
 ## ⚠️ Challenges Faced
-- The dataset contained **missing values and noisy rows**  
-- Some rows had incorrect formatting  
-- Categorical data needed to be converted into numerical form  
+- Missing values and noisy data  
+- Some rows had incorrect or inconsistent formatting  
+- Categorical features needed to be converted into numerical form  
 
 ---
 
 ## 🔄 What I Did
 
 ### 🧹 Data Cleaning
-- Removed unnecessary columns  
-- Dropped rows with missing values  
+- Selected relevant columns  
+- Removed rows with missing values  
 - Converted rating column to numeric format  
 - Skipped invalid rows while loading the dataset  
 
 ---
 
 ### 🔤 Feature Encoding
-- Converted categorical features (Genre, Director, Actor) into numbers using **Label Encoding**
+- Converted categorical features (Genre, Director, Actor) into numerical values using **Label Encoding**
 
 ---
 
 ### 🤖 Model Building
 I trained two models:
 - **Linear Regression**  
-- **Random Forest Regressor**
+- **Random Forest Regressor**  
+
+Random Forest performed better as it was able to capture more complex relationships in the data.
 
 ---
 
@@ -55,27 +57,25 @@ I trained two models:
 The models were evaluated using:
 
 - **Mean Squared Error (MSE)** → Measures prediction error  
-- (Optional) **R² Score** → Shows how well the model fits the data  
-
-Random Forest performed better as it captured more complex patterns.
+- **R² Score** → Indicates how well the model fits the data  
 
 ---
 
 ## 📊 Visualization
-A scatter plot was created to compare:
 
 ### Actual vs Predicted Ratings
 ![Actual vs Predicted](actual_vs_predicted.png)
 
-This helped visualize how close the predictions were to real values.
+This plot shows how close the predicted ratings are to the actual ratings.  
+Points closer to a diagonal trend indicate better predictions.
 
 ---
 
 ## 🧠 Key Learnings
-- Real-world datasets are often messy and require cleaning  
-- Categorical data must be encoded before training  
+- Real-world datasets are often messy and require proper cleaning  
+- Categorical data must be encoded before training models  
 - Regression models are used for predicting continuous values  
-- Random Forest can perform better than simple linear models  
+- Random Forest can outperform simpler models in many cases  
 
 ---
 
@@ -88,12 +88,12 @@ This helped visualize how close the predictions were to real values.
 ---
 
 ## 🚀 Final Thoughts
-This project helped me understand the complete workflow of a regression-based machine learning problem, from data cleaning to model evaluation.
+This project helped me understand the complete workflow of a regression-based machine learning problem — from data preprocessing to model evaluation and visualization.
 
 ---
 
 ## 📂 Dataset
-The dataset is not included in this repository due to size.
+The dataset is not included in this repository due to its size.
 
 👉 https://www.kaggle.com/datasets/adrianmcmahon/imdb-india-movies  
 
@@ -104,6 +104,6 @@ After downloading:
 ---
 
 ## 👤 Author
-Siddhi 
+Siddhi  
 
 Open to feedback and suggestions 🙂
